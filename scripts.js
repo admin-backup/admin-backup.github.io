@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const distance = launchDate - now;
 
             if (distance <= 0) {
-                countdownContainer.textContent = 'Study Hut — Now Enrolling for Spring 2026!';
+                countdownContainer.textContent = '🌊 Study Hut — Now Enrolling for Spring 2026! Catch the wave 🏄';
                 return;
             }
 
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            countdownContainer.textContent = `Spring Enrollment Opens In: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            countdownContainer.textContent = `🌊 Spring Enrollment Opens: ${days}d ${hours}h ${minutes}m ${seconds}s`;
         }
 
         updateCountdown();
